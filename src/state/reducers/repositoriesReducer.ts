@@ -23,8 +23,6 @@ const reducer = (state: RepositoriesState = innitialState, action: Action): Repo
                     data: []
                 }
             case ActionType.SEARCH_REPOSITORIES_SUCCESS:
-                console.log(action.payload)
-                // call api lay data va da co tren store roi nhung useselector sai chua view ra man hinh duoc
                 return {
                     loading: false,
                     error: null,
